@@ -2,9 +2,49 @@
 
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{multicol}
+\usepackage[table]{xcolor}
 
-\title{}
+\newcommand{\weapon}[4]{#1 - O: #2, A: #3, Щ:#4}
+
+\title{ТемерутRPG}
+\author{Някой Луд}
+
 \begin{document}
 \maketitle
+
+\section{Оръжия}
+\rowcolors{1}{white}{lightgray}
+%\begin{tabular}{p{4cm} | p{2cm}| p{2cm}| p{2cm} | p{2cm}}
+\begin{tabular}{c | c| c | c | c}
+- & Обсег[м] & Атака[]  & Щети[шутове] & маса[кг]  \\
+
+шут & 2 & 1 & 1 & - \\
+стол & 2 & 2 & 2 & 4  \\
+джаб-кроше & 1 & 2 & 1 & - \\
+картечница & 600/100 & 4 & 10/100 & 8\footnotemark  \\
+чехъл & 1 & 1 & 0 & 0  \\
+копие & 3 & 3 & 3 & 2  \\
+Javelin & 4e3 & 6 & 30\footnotemark & 8 \\
+\end{tabular}
+\footnotetext[1]{100 патрона са 3кг}
+\footnotetext[2]{минава през броня до 760мм}
+
+\end{document}
+
+
+Обсег, метра; Щети, шутове; Ж, шутове
+шут: О:2 А:2 Щ:1
+стол: О:2 А:2 Щ:2
+картечница: О:600/100 А:4 Щ:10/100
+чехъл: О:1 А:1 Щ:0
+копие: О:3 А:3 Щ:3
+
+Брони
+---
+тениска: П:0
+яке: П:1
+кираса: П:3
+скафандър: П:2
+
+\tableofcontents
 \end{document}
